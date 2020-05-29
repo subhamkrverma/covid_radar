@@ -1,22 +1,4 @@
 
-.body_about{
-    background-color: rgb(84, 145, 124);
-}
-.about_heading{
-    color: white;
-    margin-left: 30px;
-    height: 600px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/3D_medical_animation_corona_virus.jpg");
-    background-repeat: no-repeat;
-  background-size: 100%,100%;
-    
-}
-.about{
-    text-align: center;
-    width: 90%;
-    margin-left: 60px;
-
-}
 #root {
     max-width: 1200px;
     margin: 0 auto;
@@ -29,7 +11,7 @@
 }
 .card{
     background-image:url("https://scontent.fpat1-1.fna.fbcdn.net/v/t1.0-9/p720x720/101748921_267944131237866_2081924292236279808_o.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_ohc=EDNuured3cwAX-Erblt&_nc_ht=scontent.fpat1-1.fna&_nc_tp=6&oh=4ce1dc92837eb1abfe5d6b4b7771668c&oe=5EF5A464" );
-
+    
 }
 
 .card>h1 {
@@ -67,4 +49,4 @@ background-image: url("https://www.transparenttextures.com/patterns/black-thread
     .card {
         flex: 1 1 calc(33% - 2rem);
     }
-} 
+}
