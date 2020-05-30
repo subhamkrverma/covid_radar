@@ -1,8 +1,11 @@
-
-<!-- saved from url=(0061)file:///C:/Users/subha/Desktop/coding%20ninja/CovidRadar.html -->
+<!DOCTYPE html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CovidRadar2020</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131019311-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,22 +14,63 @@
 
   gtag('config', 'UA-131019311-2');
 </script>
+<script >
+	function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+<style>
+	body{
+		margin: 0px;
+		background-color:#FFFFFF;
+	}
 
-<link rel="stylesheet" type="text/css" href="style.css">
-	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">      
- 
-    <title>CovidRadar2020</title><style>
-      @media(max-width:1281.9px){body,#right{width:344px}}
-        @media screen and (min-width:760px){.cards{width:760px;}.iframe{float: center}}
-        @media screen and (min-width:481px){.body{width:481px;}.iframe{float: center}}
-        @media screen and (min-width:320px){.body{width:320px;}.iframe{float: center}}
-        @media screen and (min-width:641px){.body{width:641px;}.iframe{float: center}}
-        @media screen and (min-width:941px){.body{width:941px;}.iframe{float: center}} 
-        @media screen and (min-width:560px){.body{width:560px;}.iframe{float: center}} 
-        @media screen and (max-width: 600px) {
+	.topnav {
+  background-color: #333;
+  overflow: hidden;
+  margin: 0px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -39,222 +83,66 @@
     text-align: left;
   }
 }
-
-
-    
-  #subscribe {
-    border: none;
-    background-color: blue;
-    color: black;
-    font-size: 16px;
-    margin: 4px -4px;
-    padding: 16px 40px;
-  }
-
-a:link{
-color:green;
-}
-a:visited{
-color:red;
-}
-a:hover{
-color:blue;
-}
-a:active{
-color:yellow;
-}
-a:focus{
-color:purple;
-}
-#top{
-    margin-top: 60px;
-}
-#border{
-    border:1px solid black;
-    padding: 2px;
-    margin-top:20px;
-    align:center;
-    margin-left: 430px;
-    margin-right: 400px;
-}
-
-#right{
-    margin-left:10px;   
-    margin-top: 40px;
-}
-#left10px{
-    margin-left: 200px;
-    float:left;
+#header{
+	margin: 0px;
+    color:red;
+    background: black;
+    font-size: 15px;
 }
 #p{
-    margin-top: 2px;
+    margin: 0px;
     background: black;
     color:whitesmoke;
     font-style: italic;
     
 }
-#box{
-    border:1px solid black;
-    padding: 2px;
-    margin:70px;
-    align:center;
-}
-#image{
-    color:greenyellow;
-    font-style: oblique;
-    background: palegoldenrod;
-}
-#header{
-    color:red;
-    background: black;
-    font-size: 15px;
-    
-
-
-}
-#left{
-    float:left;
-    margin-left:300px;
-}
-#left1{
-    margin-left: 230px;
-    float:left;
-}
-#center{
-    margin-left: 0px;  
-    margin-top: 50px; 
-}
-
-
-#left5px{
-    margin-left: 5px;
-}
-#social{ 
-    margin-top: 50px;
-    
-
-     
-}
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-</style> 
-       
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css " type="text/css" >
-
- <script type="text/javascript " src=" bootstrap/js/bootstrap.min.js"></script>
-</head>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <meta name="viewport" content="width=device-width,initial-scale=1" >
-
-
-
-   
-    <body >
-    	
-    		
-    	
-<div id="page">
- <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                    
-                    <a class="navbar-brand"><b>CovidRadar</b> </a>
-                        <ul class="nav navbar-nav navbar-right" id="left10px">
-                        <li><a href="about.html" target="_blank">About</a></li>
-                        <li><a href="recovered.html">Recovered</a></li>
-                        <li><a href="https://www.pmcares.gov.in/en" target="_blank">Donation</a></li>
-                        <li><a href="developers.html" target="_blank">Developers</a></li>
-                        <li><a href="https://quiz.mygov.in/quiz/quiz-on-covid-19/" target="_blank"> Quiz</a></li>
-                        <li><a href="https://covidradarindia.blogspot.com" target="_blank">Blog</a></li></button>
-                    
-                    </ul>
-                </div>
-                
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        </ul>
-        </div>
-            </div> 
-    
- </nav><br><br>
-  
-<div><pre id="header">Helpline Number:+91-11-23978046   Toll Free:1075   Helpline Email ID:<a href="mailto:ncov2019@gov.in">ncov2019@gov.in </a><strong> <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">States &amp; Union Territories (View pdf)  </a></strong><strong><img src="https://lh3.googleusercontent.com/IG4k-ER-joWW5CxN-8lbj9s9rElrNo4XrQJ3qL3N3PiavrMkx4tBtosfpg1Yq6a4yhEN4Q=s25"> Install Arogya Setu app<a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&amp;hl=en" target="_BLANK" title="For Android"> <img src="https://lh3.googleusercontent.com/EFN2CYg_624D4S41n88Inac5WrxuCJi1DuYiaOUG7KpOv1aynE7DqZKyrTpe_1syz0EV=s28"></a></strong> <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357" target="_BLANK" title="For iPhone"><img src="https://lh3.googleusercontent.com/6humZ4UCVwLZtkMi_JlrWxSu2H0bpgqRV4rLrONku28-kFqJr5BSmHrbd5GrvtTE7QQJbsU=s24" width="50"height="50"></a> </pre></div>
-  
-
-        <div id="p">
-            <center>
+</style>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="about.html">About</a>
+  <a href="recovered.html">Recovered</a>
+  <a href="https://www.pmcares.gov.in/en">Donation</a>
+  <a href="developers.html">Developers</a>
+  <a href="https://quiz.mygov.in/quiz/quiz-on-covid-19/">Quiz</a>
+  <a href="https://covidradarindia.blogspot.com">Blog</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div><marquee id="header">Helpline Number:+91-11-23978046   Toll Free:1075   Helpline Email ID:<a href="mailto:ncov2019@gov.in">ncov2019@gov.in </a><strong> <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">States &amp; Union Territories (View pdf)  </a></strong><strong><img src="https://lh3.googleusercontent.com/n_QxgPvaaBk_0tzyIbyqwIldRudBewxIJT2gRfmxbZvvw3_ovlrT6Ob25FaVvDpPWlgUrQ=s25"> Install Arogya Setu app<a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&amp;hl=en" target="_BLANK" title="For Android"> <img src="https://lh3.googleusercontent.com/534xFc6VGXEq6PTk2MaPFUQ-pS_K7axdrudQuf3vUcwo9KNLWkvDHj4MkJh4aZ7CIX-o=s28"></a></strong> <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357" target="_BLANK" title="For iPhone"><img src="https://f1.pngfuel.com/png/409/991/647/black-apple-logo-apple-icon-logo-icon-apple-worldwide-developers-conference-iphone-xr-apple-mac-mini-apple-mac-pro-ios-13-png-clip-art.png" width="50"height="30"></a></marquee></div>
+		<div id="p">
+        <center>
         <p>
             <marquee>For any technical enquiry regarding COVID19,you may kindly email on
             <strong> <a href="technicalquery.covid19@gov.in" target="_blank">technicalquery.covid19@gov.in</a></strong></marquee>
-        </p></center>    
+        </p>
+    	</center>    
         </div>
- 
-  
-  
-   
-    <center>
+   <center>
         <div id="center">    
-        <h1 style="color: black"><strong>India CoronaVirus Map and Case Count</strong></h1>
-        <button id="left1">
-            <a href="https://www.nytimes.com/interactive/2020/world/asia/india-coronavirus-cases.html#map">Map</a>
-        </button>
-        
+        <h1 style="color: black"><strong>India CoronaVirus Map and Case Count</strong></h1> 
         <button id="left1">
             <a href="https://www.covid19india.org/">By State</a>
         </button>
-        
-        <button id="left1">
-            <a href="https://www.nytimes.com/interactive/2020/world/asia/india-coronavirus-cases.html#cases">New cases</a>
-        </button>
-        
         <button id="left1">
             <a href="https://www.mohfw.gov.in/">Latest Updates &gt;&gt;</a>
         </button>
       
         </div>
     </center>
+	</br>
    <div>
-      
-       <center>      <iframe width="760" height="415" src="https://www.trackcorona.live/map" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe
-           ></center>   
+      <center><iframe width="70%" height="415" src="https://www.trackcorona.live/map" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
       <br><br>
-       
    </div>
-  
-    <div id="box">
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-  </head>
+   <div id="root" style="background-color:#E1F2F7"></div>
+   <script src="scripts.js"></script>
 
-  <body style="background-color:#FFFFFF">
-    
-    <div id="root" style="background-color:#E1F2F7"></div>
-    <script src="scripts.js"></script> 
-    </body>       
-     
-       </div>
-&gt;<br><br>
-   
-   
-<div id="center">
-    <a href="https://www.investindia.gov.in/bip?utm_source=MyGov&amp;utm_medium=campaignBanner"><img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/invest-india-banner.jpg"></a>
-</div>
-   
- <center>    <div id="center">
+   &gt;<br><br>
+
+   <center>    
+  <div id="center">
        <div id="left10px">
            <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/symptoms.png">
        </div>
@@ -265,14 +153,13 @@ color:purple;
            <img src="https://www.mygov.in/sites/all/themes/mygov/images/covid/block-two.png">
        </div>
     </div></center><br>
-
 <center><div id="social">
     <h3>COVID19 SOCIAL HUB</h3>
     <div>
-       <a href="https://www.facebook.com/MyGovIndia/" target="_blank"><img src="https://lh3.googleusercontent.com/VeOvhBG-wjJ3ymTvi_mzR0aV6cQ3P-Cy0CbJ70GbwdNGnN73whXgcE9Dns1wGY9cOgIG774=s85" width="50px" height="50px"></a>
-       <a href="https://www.instagram.com/mygovindia/" target="_blank"><img src="https://lh3.googleusercontent.com/Cg0r_zPzU7yhO3liED8h6MRFJTQUIyrFo0a3XhZTM0jSbZSPPwNvD7bTtBHXlzsY8Nl_FA=s85" width="50px" height="50px"></a>
-       <a href="https://www.messenger.com/t/MyGovIndia" target="_blank"><img src="https://lh3.googleusercontent.com/Ue49XjwOefmBTLPuY0zO3Pe1JHf0S0E3utvKcIPqjvJXKQUbwcDD9hLFwXYGSibj7kNV=s85" width="50px" height="50px"></a>
-        <a href="https://wa.me/919013353535?text=Hi" target="_blank">  <img src="https://lh3.googleusercontent.com/aarEDl62RJnQsoNJ0DcqgnionJWulnsdnxlLrMvwhV_zvRb9pM4fNDaZ-oEU960n8j0II-w=s85" width="50px" height="50px"></a>
+       <a href="https://www.facebook.com/MyGovIndia/" target="_blank"><img src="https://lh3.googleusercontent.com/ccWDU4A7fX1R24v-vvT480ySh26AYp97g1VrIB_FIdjRcuQB2JP2WdY7h_wVVAeSpg=s180-rw" width="50px" height="50px"></a>
+       <a href="https://www.instagram.com/mygovindia/" target="_blank"><img src="https://lh3.googleusercontent.com/2sREY-8UpjmaLDCTztldQf6u2RGUtuyf6VT5iyX3z53JS4TdvfQlX-rNChXKgpBYMw=s180-rw" width="50px" height="50px"></a>
+       <a href="https://www.messenger.com/t/MyGovIndia" target="_blank"><img src="https://lh3.googleusercontent.com/rkBi-WHAI-dzkAIYjGBSMUToUoi6SWKoy9Fu7QybFb6KVOJweb51NNzokTtjod__MzA=s180-rw" width="50px" height="50px"></a>
+        <a href="https://wa.me/919013353535?text=Hi" target="_blank">  <img src="https://lh3.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=s180-rw	" width="50px" height="50px"></a>
      
     </div>
     </div></center><br><br>
@@ -291,4 +178,9 @@ color:purple;
 </div><br>  
 
 <center><p><h5>&copy; 2020 CovidRadar. All Rights Reserved.</h5></p></center>
-</body></html>ś
+
+  
+ 
+
+</body>
+</html>
