@@ -13,24 +13,24 @@ request.onload = function() {
         card.setAttribute('class', 'card')
         for (var i = 0; i <= 34; i++) {
             var temp = ""
-            temp = "total confirmed  :"
+            temp = "Total confirmed  :"
             const h1 = document.createElement('h1')
             const h2 = document.createElement('h2')
-            const h21 = document.createElement('h2')
             const h3 = document.createElement('h3')
-            const h31 = document.createElement('h3')
+            const h4 = document.createElement('h4')
+            const h5 = document.createElement('h5')
             h1.textContent = resObj.data.regional[i].loc
             h2.textContent = temp + " " + resObj.data.regional[i].totalConfirmed
-            h21.textContent = "Deaths : " + resObj.data.regional[i].deaths
-            h3.textContent = "Discharged patients : " + resObj.data.regional[i].discharged
-            h31.textContent = "Active Cases :" + (resObj.data.regional[i].totalConfirmed-resObj.data.regional[i].discharged)
+            h3.textContent = "Deaths : " + resObj.data.regional[i].deaths
+            h4.textContent = "Discharged patients : " + resObj.data.regional[i].discharged
+            h5.textContent = "Active Cases :" + (resObj.data.regional[i].totalConfirmed-resObj.data.regional[i].discharged)
             const hr = document.createElement('hr')
             container.appendChild(card)
             card.appendChild(h1)
             card.appendChild(h2)
-            card.appendChild(h21)
             card.appendChild(h3)
-            card.appendChild(h31)
+            card.appendChild(h4)
+            card.appendChild(h5)
             card.appendChild(hr)
         }
 
